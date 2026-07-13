@@ -51,7 +51,7 @@ jobs:
         run: pytest api/tests/test_llm_cost_aware.py -v --tb=short
 
       - name: Upload test results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: always()
         with:
           name: llm-test-results
